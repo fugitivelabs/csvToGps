@@ -1,0 +1,8 @@
+section(yt-container)
+  form(name="editLocationForm" ng-submit="updateAction(location)")
+    h2 Update Location
+    .input-group
+      label(for="title") Title
+      input(type="text" name="title" ng-model="location.title" placeholder="Location Title" required)
+    .input-group
+      button(yt-btn type="submit" ng-disabled="!editLocationForm.$valid") Update

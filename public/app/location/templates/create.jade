@@ -1,0 +1,10 @@
+section(yt-container)
+  form(name="newLocationForm" ng-submit="createAction(locationData)")
+    h2 Create Location
+    .input-group
+      label CSV to Convert
+      input(type="file" name="file" onchange="angular.element(this).scope().attachFile(this.files)")
+    .input-group
+      button(yt-btn type="submit" ng-disabled="!newLocationForm.$valid") Submit
+
+    

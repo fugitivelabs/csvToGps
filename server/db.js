@@ -17,3 +17,4 @@ module.exports = function(config) {
 
 // new Mongoose models are defined below
 var Post = require('./models/Post');
+var Location = require('./models/Location');

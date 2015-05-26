@@ -1,0 +1,11 @@
+section(yt-container)
+  h1 Locations view
+
+  p you can build out more stuff here.
+
+  button(yt-btn ui-sref="location.new") New Location
+
+  ul
+    li(ng-repeat="location in locations") 
+      a(ui-sref="location.show({ locationId: location._id })")
+        {{location.title }}

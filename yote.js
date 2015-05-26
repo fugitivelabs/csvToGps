@@ -42,7 +42,7 @@ var UserSchema = require('./server/models/User').User
 //configure express
 app.set('views', __dirname + '/server/views');
 app.set('view engine', 'jade');
-app.use(timeout(30000)); //upper bound on server connections, in ms.
+app.use(timeout(60000)); //upper bound on server connections, in ms.
 app.use(logger('dev'));
 app.use(cookieParser());
 app.use(bodyParser.json());
